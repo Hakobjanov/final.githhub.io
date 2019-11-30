@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Skill-up shop project</title>
+</head>
+
+<body>
+    <!--Лого, меню, поиск, корзина-->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="#"><img src="images/logo.png" alt="logo" class="logo"></a>
+                </div>
+                <div class="col-md-6">
+                    <ul class="menu">
+                        <li><a class="active" href="#">Home</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Lorem ipsum dolor</a></li>
+                                <li><a href="#">Sit amet</a></li>
+                                <li><a href="#">Consectetur adipisicing</a></li>
+                                <li><a href="#">Tempor incididunt</a></li>
+                                <li><a href="#">Dolore magna aliqua</a></li>
+                                <li><a href="#">Ut enim ad minim venia</a></li>
+                                <li><a href="#">Quis nostrud</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Products</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Lorem ipsum dolor</a></li>
+                                <li><a href="#">Sit amet</a></li>
+                                <li><a href="#">Consectetur adipisicing</a></li>
+                                <li><a href="#">Tempor incididunt</a></li>
+                                <li><a href="#">Dolore magna aliqua</a></li>
+                                <li><a href="#">Ut enim ad minim venia</a></li>
+                                <li><a href="#">Quis nostrud</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Payment</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Lorem ipsum dolor</a></li>
+                                <li><a href="#">Sit amet</a></li>
+                                <li><a href="#">Consectetur adipisicing</a></li>
+                                <li><a href="#">Tempor incididunt</a></li>
+                                <li><a href="#">Dolore magna aliqua</a></li>
+                                <li><a href="#">Ut enim ad minim venia</a></li>
+                                <li><a href="#">Quis nostrud</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Shipping</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Lorem ipsum dolor</a></li>
+                                <li><a href="#">Sit amet</a></li>
+                                <li><a href="#">Consectetur adipisicing</a></li>
+                                <li><a href="#">Tempor incididunt</a></li>
+                                <li><a href="#">Dolore magna aliqua</a></li>
+                                <li><a href="#">Ut enim ad minim venia</a></li>
+                                <li><a href="#">Quis nostrud</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="search">
+                        <input class="search-area" type="search" placeholder="search">
+                        <button class="search-btn"><img src="images/4.png" alt=""></button>
+                    </div>
+
+                    <div class="cart">
+                        <div class="cart-wrap">
+                            <div calss="cart-inner">
+                                <img class="cart-logo" src="images/cart.png" alt="cart logo">
+                            </div>
+                            <div class="order" id="productsCount">
+                                0
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--SLIDER-->
+    <div class="slider">
+        <div class="container">
+            <div class="col-md-12">
+                SLIDER PLACEHOLDER
+            </div>
+        </div>
+    </div>
+
+    <main class="main">
+        
+        <!--PROCUTC NAME/CURRENT NAME-->
+        <div class="container">
+            <div class="col-md-9">
+                <div class="product-list">
+                    <p class="product-list-sup">Home page > Products > <span>Laptop and tablets</span></p>
+                    <h2 class="tablets">
+                        Laptop and tablets
+                    </h2>
+                    <div class="sort">
+                        <span>sort by price</span>
+                        <ul class="sort-menu">
+                            <li>sort by name</li>
+                            <li>sort by date</li>
+                            <li>sort by popularity</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--FILTER, left-side bar-->
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="left">
+                        <div class="filter">
+                            <p>Device type</p>
+
+                            <div class=type>
+                                <div class="checkbox">
+                                    <input class="checkbox-input" type="checkbox" id="checkbox-id">
+                                    <label class="checkbox-label" for="checkbox-id">Laptop</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input class="checkbox-input" type="checkbox" id="checkbox-d">
+                                    <label class="checkbox-label" for="checkbox-d">Tablet</label>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="filter">
+                            <p>Color</p>
+                            <div class=type>
+
+                                <div class="checkbox">
+                                    <input class="checkbox-input" type="checkbox" id="checkbox-Black">
+                                    <label class="checkbox-label" for="checkbox-Black">Black</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input class="checkbox-input" type="checkbox" id="checkbox-Red">
+                                    <label class="checkbox-label" for="checkbox-Red">Red</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input class="checkbox-input" type="checkbox" id="checkbox-Green">
+                                    <label class="checkbox-label" for="checkbox-Green">Green</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input class="checkbox-input" type="checkbox" id="checkbox-Blue">
+                                    <label class="checkbox-label" for="checkbox-Blue">Blue</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input class="checkbox-input" type="checkbox" id="checkbox-Orange">
+                                    <label class="checkbox-label" for="checkbox-Orange">Orange</label>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="filter">
+                            <p>RAm</p>
+
+                            <div class=type>
+                                <div class="checkbox">
+                                    <input class="checkbox-input" type="checkbox" id="checkbox-1">
+                                    <label class="checkbox-label" for="checkbox-1">1GB</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input class="checkbox-input" type="checkbox" id="checkbox-2">
+                                    <label class="checkbox-label" for="checkbox-2">2GB</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input class="checkbox-input" type="checkbox" id="checkbox-3">
+                                    <label class="checkbox-label" for="checkbox-3">3GB</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input class="checkbox-input" type="checkbox" id="checkbox-4">
+                                    <label class="checkbox-label" for="checkbox-4">4GB</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input class="checkbox-input" type="checkbox" id="checkbox-5">
+                                    <label class="checkbox-label" for="checkbox-5">5GB</label>
+                                </div>
+
+                            </div>
+
+                            <div class="more-opt">
+                                <p>Show more options ...</p>
+                            </div>
+
+                        </div>
+                        <div class="btn">
+                            <button class="submit">Submit</button>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROCUCT LIST, right side -->
+                <div class="right">
+                    <div class="col-md-4 ">
+                        <div class="item">
+                            <div class="item_img">
+                                <img class="device-icon" src="images/icon (17).png" alt="">
+                                <div class="zoom">
+                                    <svg>
+                                        <path fill-rule="evenodd"
+                                            d="M18.010,19.995 L14.010,19.995 L14.010,17.994 L18.010,17.994 L18.010,13.995 L20.010,13.995 L20.010,17.994 L20.010,19.995 L18.010,19.995 ZM17.995,1.990 L13.994,1.990 L13.994,-0.010 L17.995,-0.010 L19.995,-0.010 L19.995,1.990 L19.995,5.990 L17.995,5.990 L17.995,1.990 ZM0.005,20.010 L0.005,18.010 L0.005,14.010 L2.005,14.010 L2.005,18.010 L6.005,18.010 L6.005,20.010 L2.005,20.010 L0.005,20.010 ZM1.990,6.005 L-0.010,6.005 L-0.010,2.005 L-0.010,0.005 L1.990,0.005 L5.990,0.005 L5.990,2.005 L1.990,2.005 L1.990,6.005 Z" />
+                                    </svg>
+                                </div>
+                                <div class="like iLike">
+                                    <svg>
+                                        <path fill-rule="evenodd"
+                                            d="M16.967,9.228 L16.987,9.248 L10.100,16.135 L3.271,9.306 L3.271,9.306 L3.271,9.306 L3.067,9.103 L3.088,9.083 C1.627,7.413 1.651,4.907 3.213,3.345 C4.775,1.783 7.280,1.759 8.950,3.220 L8.970,3.200 L10.100,4.329 L11.084,3.345 L11.104,3.365 C12.743,1.932 15.227,1.979 16.790,3.542 C18.353,5.105 18.400,7.589 16.967,9.228 Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="item_info">
+                                <div class="item_title">
+                                    <h3>#1 Device Name</h3>
+                                </div>
+                                <div class="item_decs">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                </div>
+                                <div class="item_spec">
+                                    <span>Type:</span> Laptop
+                                </div>
+                                <div class="item_spec">
+                                    <span>Screen Size:</span> 7 inches
+                                </div>
+                                <div class="item_spec">
+                                    <span>Ram:</span> 1 GB
+                                </div>
+                            </div>
+                            <div class="item_price">
+                                <div class="price">$599
+                                    <div class="cent">25</div>
+                                </div>
+                            </div>
+
+                            <div class="btn">
+                                <div class="detail-btn">
+                                    <button class="detail"> more details</button>
+                                </div>
+                                <div class="addtocard">
+                                    <button class="add add-to-card">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="item">
+                            <div class="item_img">
+                                <img class="device-icon" src="images/icon (9).png" alt="">
+                                <div class="zoom">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="20px" height="20px">
+                                        <path fill-rule="evenodd"
+                                            d="M18.010,19.995 L14.010,19.995 L14.010,17.994 L18.010,17.994 L18.010,13.995 L20.010,13.995 L20.010,17.994 L20.010,19.995 L18.010,19.995 ZM17.995,1.990 L13.994,1.990 L13.994,-0.010 L17.995,-0.010 L19.995,-0.010 L19.995,1.990 L19.995,5.990 L17.995,5.990 L17.995,1.990 ZM0.005,20.010 L0.005,18.010 L0.005,14.010 L2.005,14.010 L2.005,18.010 L6.005,18.010 L6.005,20.010 L2.005,20.010 L0.005,20.010 ZM1.990,6.005 L-0.010,6.005 L-0.010,2.005 L-0.010,0.005 L1.990,0.005 L5.990,0.005 L5.990,2.005 L1.990,2.005 L1.990,6.005 Z" />
+                                    </svg>
+                                </div>
+                                <div class="like iLike">
+                                    <svg>
+                                        <path fill-rule="evenodd"
+                                            d="M16.967,9.228 L16.987,9.248 L10.100,16.135 L3.271,9.306 L3.271,9.306 L3.271,9.306 L3.067,9.103 L3.088,9.083 C1.627,7.413 1.651,4.907 3.213,3.345 C4.775,1.783 7.280,1.759 8.950,3.220 L8.970,3.200 L10.100,4.329 L11.084,3.345 L11.104,3.365 C12.743,1.932 15.227,1.979 16.790,3.542 C18.353,5.105 18.400,7.589 16.967,9.228 Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="item_info">
+                                <div class="item_title">
+                                    <h3>#2 Device Name</h3>
+                                </div>
+                                <div class="item_decs">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                </div>
+                                <div class="item_spec">
+                                    <span>Type:</span> Laptop
+                                </div>
+                                <div class="item_spec">
+                                    <span>Screen Size:</span> 7 inches
+                                </div>
+                                <div class="item_spec">
+                                    <span>Ram:</span> 1 GB
+                                </div>
+                            </div>
+                            <div class="item_price">
+                                <div class="price">$1250
+                                    <div class="middle-cent">99</div>
+                                </div>
+                            </div>
+
+                            <div class="btn">
+                                <div class="detail-btn">
+                                    <button class="detail"> more details</button>
+                                </div>
+                                <div class="addtocard">
+                                    <button class="add add-to-card">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="item">
+                            <div class="item_img">
+                                <img class="device-icon" src="images/icon (10).png" alt="">
+                                <div class="zoom">
+                                    <svg>
+                                        <path fill-rule="evenodd"
+                                            d="M18.010,19.995 L14.010,19.995 L14.010,17.994 L18.010,17.994 L18.010,13.995 L20.010,13.995 L20.010,17.994 L20.010,19.995 L18.010,19.995 ZM17.995,1.990 L13.994,1.990 L13.994,-0.010 L17.995,-0.010 L19.995,-0.010 L19.995,1.990 L19.995,5.990 L17.995,5.990 L17.995,1.990 ZM0.005,20.010 L0.005,18.010 L0.005,14.010 L2.005,14.010 L2.005,18.010 L6.005,18.010 L6.005,20.010 L2.005,20.010 L0.005,20.010 ZM1.990,6.005 L-0.010,6.005 L-0.010,2.005 L-0.010,0.005 L1.990,0.005 L5.990,0.005 L5.990,2.005 L1.990,2.005 L1.990,6.005 Z" />
+                                    </svg>
+                                </div>
+                                <div class="like iLike">
+                                    <svg>
+                                        <path fill-rule="evenodd"
+                                            d="M16.967,9.228 L16.987,9.248 L10.100,16.135 L3.271,9.306 L3.271,9.306 L3.271,9.306 L3.067,9.103 L3.088,9.083 C1.627,7.413 1.651,4.907 3.213,3.345 C4.775,1.783 7.280,1.759 8.950,3.220 L8.970,3.200 L10.100,4.329 L11.084,3.345 L11.104,3.365 C12.743,1.932 15.227,1.979 16.790,3.542 C18.353,5.105 18.400,7.589 16.967,9.228 Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="item_info">
+                                <div class="item_title">
+                                    <h3>#1 Device Name</h3>
+                                </div>
+                                <div class="item_decs">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                </div>
+                                <div class="item_spec">
+                                    <span>Type:</span> Laptop
+                                </div>
+                                <div class="item_spec">
+                                    <span>Screen Size:</span> 7 inches
+                                </div>
+                                <div class="item_spec">
+                                    <span>Ram:</span> 1 GB
+                                </div>
+                            </div>
+                            <div class="item_price">
+                                <div class="price">$399
+                                    <div class="cent">25</div>
+                                </div>
+                            </div>
+
+                            <div class="btn">
+                                <div class="detail-btn">
+                                    <button class="detail"> more details</button>
+                                </div>
+                                <div class="addtocard">
+                                    <button class="add add-to-card">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="item">
+                            <div class="item_img">
+                                <img class="device-icon" src="images/icon (16).png" alt="">
+                                <div class="zoom">
+                                    <svg>
+                                        <path fill-rule="evenodd"
+                                            d="M18.010,19.995 L14.010,19.995 L14.010,17.994 L18.010,17.994 L18.010,13.995 L20.010,13.995 L20.010,17.994 L20.010,19.995 L18.010,19.995 ZM17.995,1.990 L13.994,1.990 L13.994,-0.010 L17.995,-0.010 L19.995,-0.010 L19.995,1.990 L19.995,5.990 L17.995,5.990 L17.995,1.990 ZM0.005,20.010 L0.005,18.010 L0.005,14.010 L2.005,14.010 L2.005,18.010 L6.005,18.010 L6.005,20.010 L2.005,20.010 L0.005,20.010 ZM1.990,6.005 L-0.010,6.005 L-0.010,2.005 L-0.010,0.005 L1.990,0.005 L5.990,0.005 L5.990,2.005 L1.990,2.005 L1.990,6.005 Z" />
+                                    </svg>
+                                </div>
+                                <div class="like iLike">
+                                    <svg>
+                                        <path fill-rule="evenodd"
+                                            d="M16.967,9.228 L16.987,9.248 L10.100,16.135 L3.271,9.306 L3.271,9.306 L3.271,9.306 L3.067,9.103 L3.088,9.083 C1.627,7.413 1.651,4.907 3.213,3.345 C4.775,1.783 7.280,1.759 8.950,3.220 L8.970,3.200 L10.100,4.329 L11.084,3.345 L11.104,3.365 C12.743,1.932 15.227,1.979 16.790,3.542 C18.353,5.105 18.400,7.589 16.967,9.228 Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="item_info">
+                                <div class="item_title">
+                                    <h3>#1 Device Name</h3>
+                                </div>
+                                <div class="item_decs">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                </div>
+                                <div class="item_spec">
+                                    <span>Type:</span> Laptop
+                                </div>
+                                <div class="item_spec">
+                                    <span>Screen Size:</span> 7 inches
+                                </div>
+                                <div class="item_spec">
+                                    <span>Ram:</span> 1 GB
+                                </div>
+                            </div>
+                            <div class="item_price">
+                                <div class="price">$599
+                                    <div class="cent">25</div>
+                                </div>
+                            </div>
+
+                            <div class="btn">
+                                <div class="detail-btn">
+                                    <button class="detail"> more details</button>
+                                </div>
+                                <div class="addtocard">
+                                    <button class="add add-to-card">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="item">
+                            <div class="item_img">
+                                <img class="device-icon" src="images/icon (15).png" alt="">
+                                <div class="zoom">
+                                    <svg>
+                                        <path fill-rule="evenodd"
+                                            d="M18.010,19.995 L14.010,19.995 L14.010,17.994 L18.010,17.994 L18.010,13.995 L20.010,13.995 L20.010,17.994 L20.010,19.995 L18.010,19.995 ZM17.995,1.990 L13.994,1.990 L13.994,-0.010 L17.995,-0.010 L19.995,-0.010 L19.995,1.990 L19.995,5.990 L17.995,5.990 L17.995,1.990 ZM0.005,20.010 L0.005,18.010 L0.005,14.010 L2.005,14.010 L2.005,18.010 L6.005,18.010 L6.005,20.010 L2.005,20.010 L0.005,20.010 ZM1.990,6.005 L-0.010,6.005 L-0.010,2.005 L-0.010,0.005 L1.990,0.005 L5.990,0.005 L5.990,2.005 L1.990,2.005 L1.990,6.005 Z" />
+                                    </svg>
+                                </div>
+                                <div class="like iLike">
+                                    <svg>
+                                        <path fill-rule="evenodd"
+                                            d="M16.967,9.228 L16.987,9.248 L10.100,16.135 L3.271,9.306 L3.271,9.306 L3.271,9.306 L3.067,9.103 L3.088,9.083 C1.627,7.413 1.651,4.907 3.213,3.345 C4.775,1.783 7.280,1.759 8.950,3.220 L8.970,3.200 L10.100,4.329 L11.084,3.345 L11.104,3.365 C12.743,1.932 15.227,1.979 16.790,3.542 C18.353,5.105 18.400,7.589 16.967,9.228 Z" />
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div class="item_info">
+                                <div class="item_title">
+                                    <h3>#1 Device Name</h3>
+                                </div>
+                                <div class="item_decs">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                </div>
+                                <div class="item_spec">
+                                    <span>Type:</span> Laptop
+                                </div>
+                                <div class="item_spec">
+                                    <span>Screen Size:</span> 7 inches
+                                </div>
+                                <div class="item_spec">
+                                    <span>Ram:</span> 1 GB
+                                </div>
+                            </div>
+
+                            <div class="item_price">
+                                <div class="price">$1250
+                                    <div class="middle-cent">25</div>
+                                </div>
+                            </div>
+
+                            <div class="btn">
+                                <div class="detail-btn">
+                                    <button class="detail"> more details</button>
+                                </div>
+                                <div class="addtocard">
+                                    <button class="add add-to-card">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="item">
+                            <div class="item_img">
+                                <img class="device-icon" src="images/icon (9).png" alt="">
+                                <div class="zoom">
+                                    <svg>
+                                        <path fill-rule="evenodd"
+                                            d="M18.010,19.995 L14.010,19.995 L14.010,17.994 L18.010,17.994 L18.010,13.995 L20.010,13.995 L20.010,17.994 L20.010,19.995 L18.010,19.995 ZM17.995,1.990 L13.994,1.990 L13.994,-0.010 L17.995,-0.010 L19.995,-0.010 L19.995,1.990 L19.995,5.990 L17.995,5.990 L17.995,1.990 ZM0.005,20.010 L0.005,18.010 L0.005,14.010 L2.005,14.010 L2.005,18.010 L6.005,18.010 L6.005,20.010 L2.005,20.010 L0.005,20.010 ZM1.990,6.005 L-0.010,6.005 L-0.010,2.005 L-0.010,0.005 L1.990,0.005 L5.990,0.005 L5.990,2.005 L1.990,2.005 L1.990,6.005 Z" />
+                                    </svg>
+                                </div>
+                                <div class="like iLike">
+                                    <svg>
+                                        <path fill-rule="evenodd"
+                                            d="M16.967,9.228 L16.987,9.248 L10.100,16.135 L3.271,9.306 L3.271,9.306 L3.271,9.306 L3.067,9.103 L3.088,9.083 C1.627,7.413 1.651,4.907 3.213,3.345 C4.775,1.783 7.280,1.759 8.950,3.220 L8.970,3.200 L10.100,4.329 L11.084,3.345 L11.104,3.365 C12.743,1.932 15.227,1.979 16.790,3.542 C18.353,5.105 18.400,7.589 16.967,9.228 Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="item_info">
+                                <div class="item_title">
+                                    <h3>#1 Device Name</h3>
+                                </div>
+                                <div class="item_decs">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                </div>
+                                <div class="item_spec">
+                                    <span>Type:</span> Laptop
+                                </div>
+                                <div class="item_spec">
+                                    <span>Screen Size:</span> 7 inches
+                                </div>
+                                <div class="item_spec">
+                                    <span>Ram:</span> 1 GB
+                                </div>
+                            </div>
+
+                            <div class="item_price">
+                                <div class="price">$399
+                                    <div class="cent">25</div>
+                                </div>
+                            </div>
+
+                            <div class="btn">
+                                <div class="detail-btn">
+                                    <button class="detail"> more details</button>
+                                </div>
+                                <div class="addtocard">
+                                    <button class="add add-to-card">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="item">
+                            <div class="item_img">
+                                <img class="device-icon" src="images/icon (17).png" alt="">
+                                <div class="zoom">
+                                    <svg>
+                                        <path fill-rule="evenodd"
+                                            d="M18.010,19.995 L14.010,19.995 L14.010,17.994 L18.010,17.994 L18.010,13.995 L20.010,13.995 L20.010,17.994 L20.010,19.995 L18.010,19.995 ZM17.995,1.990 L13.994,1.990 L13.994,-0.010 L17.995,-0.010 L19.995,-0.010 L19.995,1.990 L19.995,5.990 L17.995,5.990 L17.995,1.990 ZM0.005,20.010 L0.005,18.010 L0.005,14.010 L2.005,14.010 L2.005,18.010 L6.005,18.010 L6.005,20.010 L2.005,20.010 L0.005,20.010 ZM1.990,6.005 L-0.010,6.005 L-0.010,2.005 L-0.010,0.005 L1.990,0.005 L5.990,0.005 L5.990,2.005 L1.990,2.005 L1.990,6.005 Z" />
+                                    </svg>
+                                </div>
+                                <div class="like iLike">
+                                    <svg>
+                                        <path fill-rule="evenodd"
+                                            d="M16.967,9.228 L16.987,9.248 L10.100,16.135 L3.271,9.306 L3.271,9.306 L3.271,9.306 L3.067,9.103 L3.088,9.083 C1.627,7.413 1.651,4.907 3.213,3.345 C4.775,1.783 7.280,1.759 8.950,3.220 L8.970,3.200 L10.100,4.329 L11.084,3.345 L11.104,3.365 C12.743,1.932 15.227,1.979 16.790,3.542 C18.353,5.105 18.400,7.589 16.967,9.228 Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="item_info">
+                                <div class="item_title">
+                                    <h3>#1 Device Name</h3>
+                                </div>
+                                <div class="item_decs">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                </div>
+                                <div class="item_spec">
+                                    <span>Type:</span> Laptop
+                                </div>
+                                <div class="item_spec">
+                                    <span>Screen Size:</span> 7 inches
+                                </div>
+                                <div class="item_spec">
+                                    <span>Ram:</span> 1 GB
+                                </div>
+                            </div>
+                            <div class="item_price">
+                                <div class="price">$599
+                                    <div class="cent">25</div>
+                                </div>
+                            </div>
+
+                            <div class="btn">
+                                <div class="detail-btn">
+                                    <button class="detail"> more details</button>
+                                </div>
+                                <div class="addtocard">
+                                    <button class="add add-to-card">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="item">
+                            <div class="item_img">
+                                <img class="device-icon" src="images/icon (17).png" alt="">
+                                <div class="zoom">
+                                    <svg>
+                                        <path fill-rule="evenodd"
+                                            d="M18.010,19.995 L14.010,19.995 L14.010,17.994 L18.010,17.994 L18.010,13.995 L20.010,13.995 L20.010,17.994 L20.010,19.995 L18.010,19.995 ZM17.995,1.990 L13.994,1.990 L13.994,-0.010 L17.995,-0.010 L19.995,-0.010 L19.995,1.990 L19.995,5.990 L17.995,5.990 L17.995,1.990 ZM0.005,20.010 L0.005,18.010 L0.005,14.010 L2.005,14.010 L2.005,18.010 L6.005,18.010 L6.005,20.010 L2.005,20.010 L0.005,20.010 ZM1.990,6.005 L-0.010,6.005 L-0.010,2.005 L-0.010,0.005 L1.990,0.005 L5.990,0.005 L5.990,2.005 L1.990,2.005 L1.990,6.005 Z" />
+                                    </svg>
+
+                                </div>
+                                <div class="like iLike">
+                                    <svg>
+                                        <path fill-rule="evenodd"
+                                            d="M16.967,9.228 L16.987,9.248 L10.100,16.135 L3.271,9.306 L3.271,9.306 L3.271,9.306 L3.067,9.103 L3.088,9.083 C1.627,7.413 1.651,4.907 3.213,3.345 C4.775,1.783 7.280,1.759 8.950,3.220 L8.970,3.200 L10.100,4.329 L11.084,3.345 L11.104,3.365 C12.743,1.932 15.227,1.979 16.790,3.542 C18.353,5.105 18.400,7.589 16.967,9.228 Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="item_info">
+                                <div class="item_title">
+                                    <h3>#1 Device Name</h3>
+                                </div>
+                                <div class="item_decs">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                </div>
+                                <div class="item_spec">
+                                    <span>Type:</span> Laptop
+                                </div>
+                                <div class="item_spec">
+                                    <span>Screen Size:</span> 7 inches
+                                </div>
+                                <div class="item_spec">
+                                    <span>Ram:</span> 1 GB
+                                </div>
+                            </div>
+
+                            <div class="item_price">
+                                <div class="price">$1250
+                                    <div class="middle-cent">25</div>
+                                </div>
+                            </div>
+
+                            <div class="btn">
+                                <div class="detail-btn">
+                                    <button class="detail"> more details</button>
+                                </div>
+                                <div class="addtocard">
+                                    <button class="add add-to-card">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="item">
+                            <div class="item_img">
+                                <img class="device-icon" src="images/icon (10).png" alt="">
+                                <div class="zoom">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="20px" height="20px">
+                                        <path fill-rule="evenodd"
+                                            d="M18.010,19.995 L14.010,19.995 L14.010,17.994 L18.010,17.994 L18.010,13.995 L20.010,13.995 L20.010,17.994 L20.010,19.995 L18.010,19.995 ZM17.995,1.990 L13.994,1.990 L13.994,-0.010 L17.995,-0.010 L19.995,-0.010 L19.995,1.990 L19.995,5.990 L17.995,5.990 L17.995,1.990 ZM0.005,20.010 L0.005,18.010 L0.005,14.010 L2.005,14.010 L2.005,18.010 L6.005,18.010 L6.005,20.010 L2.005,20.010 L0.005,20.010 ZM1.990,6.005 L-0.010,6.005 L-0.010,2.005 L-0.010,0.005 L1.990,0.005 L5.990,0.005 L5.990,2.005 L1.990,2.005 L1.990,6.005 Z" />
+                                    </svg>
+                                </div>
+
+                                <div class="like iLike">
+                                    <svg>
+                                        <path fill-rule="evenodd"
+                                            d="M16.967,9.228 L16.987,9.248 L10.100,16.135 L3.271,9.306 L3.271,9.306 L3.271,9.306 L3.067,9.103 L3.088,9.083 C1.627,7.413 1.651,4.907 3.213,3.345 C4.775,1.783 7.280,1.759 8.950,3.220 L8.970,3.200 L10.100,4.329 L11.084,3.345 L11.104,3.365 C12.743,1.932 15.227,1.979 16.790,3.542 C18.353,5.105 18.400,7.589 16.967,9.228 Z" />
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div class="item_info">
+                                <div class="item_title">
+                                    <h3>#3 Device Name</h3>
+                                </div>
+                                <div class="item_decs">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                </div>
+                                <div class="item_spec">
+                                    <span>Type:</span> Laptop
+                                </div>
+                                <div class="item_spec">
+                                    <span>Screen Size:</span> 7 inches
+                                </div>
+                                <div class="item_spec">
+                                    <span>Ram:</span> 1 GB
+                                </div>
+                            </div>
+
+                            <div class="item_price">
+                                <div class="price">$399
+                                    <div class="cent">25</div>
+                                </div>
+                            </div>
+
+                            <div class="btn">
+                                <div class="detail-btn">
+                                    <button class="detail"> more details</button>
+                                </div>
+                                <div class="addtocard">
+                                    <button class="add add-to-card">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+    <div class="container">
+        <div class="col-md-12">
+            <div class="footer-text">
+                <p>	&copy; Copyright 2019. by HAKOBJANOV</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="app.js"></script>
+
+</body>
+
+</html>
